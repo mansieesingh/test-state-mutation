@@ -2,66 +2,14 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 
-const styles = theme => ({
-  
-  root: {
-    flexGrow: 1,
-  },
-  card: {
-    minWidth: 275,
-  },
-  button: {
-    margin: theme.spacing(1)
-  },
-  input: {
-    display: "none"
-  },
-  container: {
-    display: "flex",
-    flexWrap: "wrap"
-  },
-  textField: {
-    marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1),
-    width: 200
-  },
-  dense: {
-    marginTop: 19
-  },
-  menu: {
-    width: 200
-  },
-  grid: {
-    width: '60%',
-  },
-  menuButton: {
-    marginRight: theme.spacing(4),
-  },
-  logoutButtons: {
-    marginLeft: 450,
-    marginRight: -1
-  },
-  erormessage: {
-    color: "red"
-  },
-  title: {
-    flexGrow: 1,
-    
-  },
-});
-
 class Login extends Component {
 
 constructor(props){
   super(props);
   this.state={
-  username:'',
-  password:'',
-  clickedButton2: false,
-  clickedButton3: false,
-  clickedButton1: false,
-  emptyuser: false,
-  newuser: false
+    clickedButton2: false,
+    clickedButton3: false,
+    clickedButton1: false,
   }
  }
 
@@ -86,8 +34,6 @@ constructor(props){
   
   }
 
-  //this.props.onLogin(this.state.validexistinguser, this.state.newuser);  
-
 render() {
     console.log("In Login.js ---> render() ");
     return (
@@ -104,7 +50,5 @@ render() {
     );
   }
 }
-// const style = {
-//  margin: 15,
-// };
+
 export default withStyles(styles)(Login);

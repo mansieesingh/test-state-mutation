@@ -6,26 +6,6 @@ import Login from "./Login";
 import TaskPage from "./TaskPage"
 
 
-function TabContainer(props) {
-  return (
-    <Typography component="div" style={{ padding: 8 * 3 }}>
-      {props.children}
-    </Typography>
-  );
-}
-
-TabContainer.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-    
-  },
-});
-
 class WelcomePage extends React.Component {
   state = {
     value: 0,
