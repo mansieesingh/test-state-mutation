@@ -1,0 +1,35 @@
+In Welcome.js ---> render() 									     
+In Welcome.js  ---> render() ---> this.state.loadChildComponentflag false			
+In Login.js ---> render() 								      
+In Login.js  ---> render() ---> this.state.clickedButton1 false					     
+In Login.js  ---> render() ---> this.state.clickedButton2 false				      
+In Login.js  ---> render() ---> this.state.clickedButton3 false					
+--------------------------------Clicked Button-2 --------------------------------
+		
+In Login.js this.setState({clickedButton2: true})  false			
+In Login.js ---> render() 	
+In Login.js  ---> render() ---> this.state.clickedButton1 false					
+In Login.js  ---> render() ---> this.state.clickedButton2 true					
+In Login.js  ---> render() ---> this.state.clickedButton3 false					
+
+--------------------------------Clicked Button-3 --------------------------------
+		
+In Login.js this.setState({clickedButton3: true})  false					
+In Login.js ---> render() 									
+In Login.js  ---> render() ---> this.state.clickedButton1 false					
+In Login.js  ---> render() ---> this.state.clickedButton2 true					
+In Login.js  ---> render() ---> this.state.clickedButton3 true					
+
+--------------------------------Clicked Button-1 --------------------------------
+		
+In Login.js this.setState({clickedButton1: true})  false
+
+In Welcome.js ---> setChildComponentFlag() 							
+In Welcome.js this.setState({loadChildComponentflag: userValidity})  false			
+In Welcome.js ---> render() 									
+In Welcome.js  ---> render() ---> this.state.loadChildComponentflag false
+			
+In Login.js ---> render() 									
+In Login.js  ---> render() ---> this.state.clickedButton1 true					
+In Login.js  ---> render() ---> this.state.clickedButton2 true					
+In Login.js  ---> render() ---> this.state.clickedButton3 true	
