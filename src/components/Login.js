@@ -1,6 +1,5 @@
 
 import React, { Component } from "react";
-import { withStyles } from "@material-ui/core/styles";
 
 class Login extends Component {
 
@@ -23,25 +22,27 @@ constructor(props){
   console.log("--------------------------------Clicked Button-3 --------------------------------");
   this.setState({clickedButton3: true});
   console.log("In Login.js this.setState({clickedButton3: true})  "+ this.state.clickedButton3);
-  console.log(this);  // this refers to Login Class
+  //console.log(this);  // this refers to Login Class
 }
 
 
  handleClick1 = () => {
   console.log("--------------------------------Clicked Button-1 --------------------------------");
     this.setState({clickedButton1: true}, function () {this.props.onLogin(this.state.clickedButton1)});
+   // this.setState({clickedButton1: true});
+   
     // this callback function updated the state immmediately
     // this is because callback function will be executed only after asynchonous setState() 
     // function has completed its update
 
     console.log("In Login.js this.setState({clickedButton1: true})  "+ this.state.clickedButton1);
-    // this.props.onLogin(this.state.clickedButton1); // this does not updates the state immmediately
+   // this.props.onLogin(this.state.clickedButton1); // this does not updates the state immmediately
   
   }
 
 render() {
     console.log("In Login.js ---> render() ");
-    console.log(this);  // this refers to Login Class
+    // console.log(this);  // this refers to Login Class
     return (
       <div>
          {console.log("     In Login.js  ---> render() ---> this.state.clickedButton1 "+this.state.clickedButton1)}
