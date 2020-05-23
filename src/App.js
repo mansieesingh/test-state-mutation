@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './App.css';
-import HomePage from './HomePage'
+import HomePage from './HomePage';
+import Parent from './components/Parent';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <HomePage />
+      <Parent />
+      {/* <HomePage /> */}
     </div>
   );
 }
